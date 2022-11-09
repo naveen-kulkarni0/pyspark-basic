@@ -3,6 +3,7 @@ findspark.init()
 
 import pyspark
 sc = pyspark.SparkContext(appName="maps_and_lazy_evaluation_example")
+sc.setLogLevel("INFO")
 
 log_of_songs = [
     "Despacito",
